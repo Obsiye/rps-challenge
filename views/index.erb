@@ -1,8 +1,9 @@
 <h1>Rock Paper Scissors!!</h1>
+<%= @name %>
 
-<form name='user_form' action='/name' method='get' id='user_form'>
+<form name='user_form' action='/name' method='post' id='user_form'>
   <label for='name' id='name_label'>Name:</label>
   <input type='text' name='name' id='name' placeholder='Please enter your name' />
-  
+
   <input type='submit' value='submit'/>
 </form>
