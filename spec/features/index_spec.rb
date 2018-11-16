@@ -5,10 +5,8 @@ feature "index page" do
     expect(page).to have_content("Rock Paper Scissors!!")
   end
 
-  scenario 'Fill in user form' do
-    visit('/')
-    fill_in('name', with: 'Abdi')
-    click_button('submit')
+  scenario 'Submit user form' do
+    sign_in_and_play
     expect(page).to have_content("Welcome Abdi")
   end
   
