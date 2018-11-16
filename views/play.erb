@@ -1,1 +1,10 @@
 Welcome <%= @game.player.name %>
+
+<form action='/action' method='post' name="action_form">
+  <select name="player_choice" >
+    <option value="rock">Rock</option>
+    <option value="paper">Paper</option>
+    <option value="scissors">Scissors</option>
+  </select>
+  <input type='submit' value='Submit'>
+</form>
