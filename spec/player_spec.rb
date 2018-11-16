@@ -1,9 +1,13 @@
 describe Player do
-  let(:player_class) { Player }
+  let(:player) { Player.new('John') }
 
   it 'should store players\' name' do
-    player1 = Player.new('John')
-    expect(player1.name).to eq('John')
+    expect(player.name).to eq('John')
+  end
+
+  it 'should store players\' move' do
+    player.move = 'Rock'
+    expect(player.move).to eq 'Rock'
   end
 
 end

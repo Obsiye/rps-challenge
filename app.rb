@@ -22,4 +22,9 @@ class RockPaperScissors < Sinatra::Base
     erb(:play)
   end
 
+  post '/action' do
+
+    
+  end
+
 end
