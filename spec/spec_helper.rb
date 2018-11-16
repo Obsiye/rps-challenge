@@ -16,6 +16,7 @@ RSpec.configure do |config|
   require 'capybara/rspec'
   require 'rspec'
   require_relative "../app"
+  require_relative 'features/web_helpers.rb'
   Capybara.app = RockPaperScissors
 
   config.after(:suite) do

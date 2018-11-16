@@ -1,4 +1,4 @@
-feature "index page" do
+feature "index_page" do
 
   scenario 'Enter application website' do
     visit('/')
