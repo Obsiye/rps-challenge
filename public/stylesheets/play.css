@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#player_choice {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+  font-size:20px;
+  -webkit-appearance:none;
+}
+
+#submit {
+  font-size:20px;
+  padding:5%;
+  margin:10%;
+  cursor: pointer;
+  -webkit-appearance:none;
+}
+
+#form_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
