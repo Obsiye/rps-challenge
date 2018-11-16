@@ -4,17 +4,22 @@
 <body>
 
 Welcome <%= @game.player.name %>
+<br/>
 
-<div id="form_box">
-  <form action='/action' method='post' name="action_form">
-    <select name="player_choice" id="player_choice">
-      <option value="0">Select Move:</option>
-      <option value="rock">Rock</option>
-      <option value="paper">Paper</option>
-      <option value="scissors">Scissors</option>
-    </select>
-    <input type='submit' value='Submit' id='submit'>
-  </form>
-</div>
+<% if @game.player.move.nil? %>
+  <div id="form_box">
+    <form action='/action' method='post' name="action_form">
+      <select name="player_choice" id="player_choice">
+        <option value="0">Select Move:</option>
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+      </select>
+      <input type='submit' value='submit' id='submit'>
+    </form>
+  </div>
+<% else %>
+  <%= @game.player.move.capitalize %> vs
+<% end %>
 
 </body>

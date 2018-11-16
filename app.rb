@@ -23,8 +23,8 @@ class RockPaperScissors < Sinatra::Base
   end
 
   post '/action' do
-
-    
+    @game.player.move = params[:player_choice]
+    redirect '/play'
   end
 
 end
