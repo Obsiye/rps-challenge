@@ -8,6 +8,7 @@ feature "index page" do
   scenario 'Fill in user form' do
     visit('/')
     fill_in('name', with: 'Abdi')
+    click_button('submit')
     expect(page).to have_content("Welcome Abdi")
   end
   
