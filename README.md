@@ -1,6 +1,6 @@
 # Rock Paper Scissors Challenge
 
-To get started type the below into your command line:
+###To get started type the below into your command line:
 
 1. ```git clone git@github.com:Obsiye/rps-challenge.git```
 
@@ -10,9 +10,9 @@ To get started type the below into your command line:
 
 In your browser go to http://localhost:4567
 
-Now have fun!
+**Now have fun!**
 
-Developer information:
+###Developer information:
 
 Controller:
 app.rb (has the routes for index / and submitting player name /name and for the game page /play)
