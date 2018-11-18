@@ -5,6 +5,12 @@ feature "Play game" do
     select 'Rock', from: 'player_choice'
     click_button('submit')
     expect(page).to have_content('Rock vs')
-  end 
+  end
+
+  # scenario 'Rock beats Scissors' do
+  #   sign_in_and_play
+  #   select 'Rock', from: 'player_choice'
+
+  # end
 
 end
