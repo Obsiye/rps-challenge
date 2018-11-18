@@ -14,8 +14,8 @@ describe Game do
   context 'Rock vs Paper' do
     it 'should return lose for Rock vs Paper' do
       computer_player = double(:computer_player,:move => 'Paper', :capitalize => 'Paper', :downcase => 'paper')
-
-      expect(@game.result(player, computer_player)).to eq 'lose'
+      @game.compare(player, computer_player)
+      expect(@game.result).to eq 'lose'
     end
   end
 
