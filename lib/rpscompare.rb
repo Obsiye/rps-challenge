@@ -12,8 +12,7 @@ module RPSCompare
 
   def self.result(compare,move1,move2)
     return 'draw' if move1.downcase == move2.downcase
-    return 'lose' if compare.empty?
-    return 'win' if !compare.empty?
+    if compare.empty? then return 'lose' else return 'win' end
   end
 
 end

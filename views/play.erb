@@ -19,7 +19,7 @@ Welcome <%= @game.player.name %>
     </form>
   </div>
 <% else %>
-  <%= @game.player.move %> vs <%= @computer.random_move %>
+  <%= @result&.capitalize %>
 <% end %>
 
 </body>

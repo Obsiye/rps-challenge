@@ -20,12 +20,13 @@ class RockPaperScissors < Sinatra::Base
   end
 
   get '/play' do
-    @computer = ComputerPlayer
+    @result = @game.result
     erb(:play)
   end
 
   post '/action' do
     @game.player.move = params[:player_choice]
+    @game.compare(@game.player.move,ComputerPlayer.random_move)
     redirect '/play'
   end
 
