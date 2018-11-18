@@ -13,4 +13,8 @@ class Game
     @game
   end
 
+  def compare(move1,move2 = ComputerPlayer.random_move)
+    
+  end
+
 end
