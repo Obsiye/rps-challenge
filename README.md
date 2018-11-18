@@ -1,7 +1,9 @@
 # Rock Paper Scissors Challenge
 
-```git clone```
+To get started type the below into your command line:
 
-```bundle```
+1. ```git clone git@github.com:Obsiye/rps-challenge.git```
 
-```rackup -p 4567```
+2. ```bundle```
+
+3. ```rackup -p 4567```
