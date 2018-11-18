@@ -15,7 +15,8 @@ In your browser go to http://localhost:4567
 ### Developer information:
 
 **Controller:**\
-app.rb (has the routes for index / and submitting player name /name and for the game page /play)
+app.rb\
+(has the routes for index / and submitting player name /name and selecting a move /action and the game page /play)
 
 **Modules:**\
 computerplayer.rb (will return a random move e.g. 'Rock')\
