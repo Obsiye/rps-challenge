@@ -1,4 +1,8 @@
+require_relative 'rpscompare'
+
 class Game
+  include RPSCompare
+
   attr_reader :player
 
   def initialize(player)
@@ -14,7 +18,7 @@ class Game
   end
 
   def compare(move1,move2 = ComputerPlayer.random_move)
-    
+    RPSCompare.compare(move1,move2)
   end
 
 end

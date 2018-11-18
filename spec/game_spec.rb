@@ -1,6 +1,6 @@
 describe Game do
   let(:game_class) { Game }
-  let(:player) { double(:player, :name => 'John', :move => 'Rock') }
+  let(:player) { double(:player, :name => 'John', :move => 'Rock', :downcase => 'rock',:capitalize => 'Rock',:to_sym => :rock) }
 
   before(:each) do
     game_class.create(player)
@@ -12,11 +12,10 @@ describe Game do
   end
 
   context 'Rock vs Paper' do
-    it 'should return win for Rock vs Paper' do
-      computer_player = double()
-      allow(computer_player).to receive(:move) { 'Paper' }
-      
-      expect(@game.compare(player, computer_player)).to eq 'won'
+    it 'should return lose for Rock vs Paper' do
+      computer_player = double(:computer_player,:move => 'Paper', :capitalize => 'Paper', :downcase => 'paper')
+
+      expect(@game.compare(player, computer_player)).to eq 'lose'
     end
   end
 
