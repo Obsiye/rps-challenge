@@ -1,11 +1,15 @@
 class ComputerPlayer
 
   def self.moves
-    ["rock", "paper", "scissors"]
+    ["Rock", "Paper", "Scissors"]
   end
 
   def self.random_move
-    self.moves[rand(0...self.moves.length)]
+    moves[random]
+  end
+
+  def self.random
+    rand(0..2)
   end
 
 end
