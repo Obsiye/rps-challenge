@@ -6,6 +6,7 @@
 Welcome <%= @game.player.name %>
 <br/>
 <h2><%= @game.player.name %> vs Computer</h2>
+
 <% if @game.player.move.nil? %>
   <div id="form_box">
     <form action='/action' method='post' name="action_form">
@@ -19,7 +20,7 @@ Welcome <%= @game.player.name %>
     </form>
   </div>
 <% else %>
-  <%= @result&.capitalize %>
+  <%= @result.capitalize %>
 <% end %>
 
 </body>
