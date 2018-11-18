@@ -11,10 +11,7 @@
 In your browser go to http://localhost:4567
 
 **Now have fun!**
-
 - - -
-- - -
-
 ### Developer information:
 
 **Controller:**
