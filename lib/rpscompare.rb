@@ -1,16 +1,17 @@
 module RPSCompare
-  RPS = {rock: 'Scissors',
+  RPS = { rock: 'Scissors',
       paper: 'Rock',
-      scissors: 'Paper'}
+      scissors: 'Paper'
+  }
 
-  def self.compare(move1,move2)
-    compare = RPS.select do |key, hash| 
+  def self.compare(move1, move2)
+    compare = RPS.select do |_key, hash| 
       hash[RPS[move1.downcase.to_sym]] == move2.capitalize 
     end
-    self.result(compare,move1,move2)
+    result(compare, move1, move2)
   end
 
-  def self.result(compare,move1,move2)
+  def self.result(compare, move1, move2)
     return 'draw' if move1.downcase == move2.downcase
     if compare.empty? then return 'lose' else return 'win' end
   end

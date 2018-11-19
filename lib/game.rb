@@ -16,8 +16,8 @@ class Game
     @game
   end
 
-  def compare(move1,move2 = ComputerPlayer.random_move)
-    @result = RPSCompare.compare(move1,move2)
+  def compare(move1, move2 = ComputerPlayer.random_move)
+    @result = RPSCompare.compare(move1, move2)
   end
 
 end
