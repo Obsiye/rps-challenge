@@ -8,7 +8,7 @@
 
 3. ```rackup -p 4567```
 
-In your browser go to http://localhost:4567\
+In your browser go to http://localhost:4567
 
 To run the tests use rspec command:
 -. ```rspec```
